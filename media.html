@@ -1,59 +1,103 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Media — GreenSteps</title>
-<meta name="description" content="Media resources: images, video with captions, and audio for GreenSteps educational materials.">
-<link rel="canonical" href="media.html">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Media — GreenSteps</title>
+  <meta name="description" content="GreenSteps Media Library: explore images, audio, and videos promoting environmental sustainability.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/media.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-  <h1>Media Library</h1>
-  <nav aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="extras.html">Extras</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- ✅ Consistent Header -->
+  <header>
+    <nav aria-label="Main navigation" class="nav-container">
+      <div class="logo">GreenSteps</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html" aria-current="page">Media</a></li>
+        <li><a href="extras.html">Extras</a></li>
+      </ul>
+      <a href="#contact" class="cta">Join Us</a>
+    </nav>
+  </header>
 
-<main id="main" tabindex="-1">
-  <article>
-    <h2>Images</h2>
+  <!-- ✅ Hero (no background image) -->
+  <section class="media-hero">
+    <div class="media-hero-content">
+      <h1>Media Library</h1>
+      <p>Discover educational media resources — images, audio, and videos that showcase our work for a greener future.</p>
+    </div>
+  </section>
 
-    <figure>
-      <img src="Assets/Images/image1.jpg" alt="Butterflies on a flower" width="400">
-      <figcaption>Butterflies</figcaption>
-    </figure>
+  <main id="main" class="media-content">
 
-    <section>
-      <h3>Audio</h3>
-      <p>Short audio explaining how to prepare simple compost.</p>
+    <!-- ✅ Images Section -->
+    <section class="media-section">
+      <h2>Image Gallery</h2>
+      <div class="media-grid two-images">
+        <figure>
+          <img src="assets/images/image1.jpg" alt="Butterflies on a flower">
+          <figcaption>Butterflies pollinating flowers</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/image2.jpg" alt="Children planting trees">
+          <figcaption>Community tree planting drive</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ✅ Audio Section -->
+    <section class="media-section">
+      <h2>Audio Resources</h2>
+      <p>Learn how to prepare compost with our short audio guide.</p>
       <audio controls>
         <source src="assets/audio/sample.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
     </section>
 
-    <section>
-      <h3>Video with captions</h3>
+    <!-- ✅ Video Section -->
+    <section class="media-section">
+      <h2>Video Resources</h2>
+      <p>Watch our short documentary on local climate action, complete with captions.</p>
       <video controls width="640">
-        <source src="assets/video/sample.webm" type="video/webm">
         <source src="assets/video/sample.mp4" type="video/mp4">
+        <source src="assets/video/sample.webm" type="video/webm">
         <track src="assets/captions/sample.vtt" kind="captions" srclang="en" label="English captions" default>
         Your browser does not support the video element.
       </video>
     </section>
-  </article>
-</main>
+  </main>
 
-<footer>
-  <p>Return to <a href="index.html">Home</a>.</p>
-</footer>
+  <!-- ✅ Consistent Footer -->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3>About GreenSteps</h3>
+        <p>We are dedicated to promoting eco-friendly practices, educating communities, and restoring balance to our environment.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="extras.html">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <address>
+          Email: <a href="mailto:info@greensteps.org">info@greensteps.org</a><br>
+          Phone: +1 555-123-4567<br>
+          Nairobi, Kenya
+        </address>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 GreenSteps. All rights reserved.</p>
+  </footer>
 </body>
 </html>
